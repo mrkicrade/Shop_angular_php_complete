@@ -1,0 +1,307 @@
+  <body>
+    <!-- {{name}} -->
+    <!-- Main header -->
+    <header class="main-header">
+      <!-- Top Bar -->
+      <div class="top-bar">
+        <!-- Container -->
+        <div class="container">
+          <a href="#" class="phone-info">+381 11 555 55 555</a>
+          <a href="#/user.html" class="login">{{ime}}</a>
+          <!-- <a href="#/login.html" class="login">{{prezime}}</a> -->
+        </div>
+        <!-- Container End, Top Bar End -->
+      </div>
+      <!-- Navbar -->
+      <div class="navbar">
+        <!-- Container -->
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <h1 class="logo"><a href="../index.html"><img src="img/logo.png" alt="Logo" class="img-responsive"></a></h1>
+          </div>
+          <div class="collapse navbar-collapse" id="navigation">
+            <nav>
+              <ul class="nav navbar-nav navbar-right"> <!-- nav navbar-nav znaci da je ovo navigacija unutar navbara -->
+                <!-- <li class="active"><a href="index.html">Naslovna</a></li> -->
+                <li class="active"><a href="#">Naslovna</a></li>
+                <li><a href="#">Prodavnica</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">O nama</a></li>
+                <li><a href="#">Kontakt</a></li>
+              </ul>
+            </nav>
+          </div>
+          <!-- Search-card Holder -->
+            <div class="search-cart-holder">
+              <div class="search">
+                <input type="text" name="Search" class="form-control">
+                <button type="submit" class="btn"></button>
+              </div>
+              <a href="#" class="cart">
+                <img src="img/cart-icon.png" alt="Korpa">
+                <span class="badge">{{nmb}}</span>
+              </a>
+            </div>
+          <!-- Search-card Holder End -->
+        </div>
+        <!-- Container End -->
+      </div>
+      <!-- Navbar End -->
+    </header>
+    <!-- Main Header End -->
+
+    <!-- Main -->
+    <main>
+      <!-- Product Title -->
+      <div class="product-title2">
+        <img src="img/arrow-left2.png" alt="Arrow left" class="img-responsive">
+        <h4>{{productTitle}} {{model}}</h4>
+      </div>
+      <!-- Product Title End -->
+      <!-- Product 2 -->     
+      <div class="product2">
+        <div class="row">          
+          <div class="col-sm-5 col-md-5 col-lg-5">    
+            <img src="img/product{{img}}.jpg" alt="Product 1" class="img-responsive">
+          </div>  
+          <!-- Info -->
+          <div class="col-sm-7 col-md-7 col-lg-7"> 
+            <div class="info2 clearfix">           
+              <h4>{{productTitle}} {{model}}</h4>
+              
+              <p>
+                {{description}}
+              </p><br>
+            </div>
+          </div>
+          <div class="col-sm-1 col-md-1 col-lg-1">
+            <div class="description1">          
+              <ul class="list-reset">
+                <li>Boja:</li>
+                <li>Cena:</li>
+                <li>Dostava:</li>
+                <li>Količina:</li>
+              </ul>
+            </div>
+          </div>    
+          <div class="col-sm-6 col-md-6 col-lg-6">
+            <div class="description2">
+              <ul class="list-reset">
+                <li>
+                  <ul class="color-picker list-reset">
+                    <li><button id="{{color1}}" class="btn {{color1}}" ng-click="color($event)"></button></li>
+                    <li><button id="{{color2}}" class="btn {{color2}}" ng-click="color($event)"></button></li>
+                    <li><button id="{{color3}}" class="btn {{color3}}" ng-click="color($event)"></button></li>
+                  </ul>
+                </li>
+                <li class="price2">{{price}}</li>
+                <li>Besplatna</li>
+                <li>
+                  <input type="number" class="input" min="1" ng-model="number">
+                </li>
+              </ul>
+            </div>
+          </div> 
+          <!-- Info End -->  
+            <button type="submit" class="btn1" ng-click="buy()">Ubaci u korpu</button> 
+        </div>
+      </div>
+      <!-- Product2 End -->
+      <article class="product21">      
+        <div class="row">          
+          <div class="hidden-xs col-sm-1 col-md-1 col-lg-1">
+            <img src="img/product{{img}}.jpg" alt="Product 1" class="img-responsive">
+          </div>  
+          <div class="hidden-xs col-sm-1 col-md-1 col-lg-1">
+            <img src="img/product{{img}}.jpg" alt="Product 1" class="img-responsive">
+          </div>
+          <div class="hidden-xs col-sm-1 col-md-1 col-lg-1">
+            <img src="img/product{{img}}.jpg" alt="Product 1" class="img-responsive">
+          </div>
+          <div class="hidden-xs col-sm-1 col-md-1 col-lg-1">
+            <img src="img/product{{img}}.jpg" alt="Product 1" class="img-responsive">
+          </div>
+          <div class="hidden-xs col-sm-1 col-md-1 col-lg-1">
+            <img src="img/product{{img}}.jpg" alt="Product 1" class="img-responsive">
+          </div>
+        </div>
+      </article>  
+      <div class="ponuda">
+        <h4>Izdvajamo</h4>
+      </div>  
+      <!-- More Products -->
+      <div class="row">    
+        <div class="col-sm-4 col-md-4 col-lg-3">
+          <article class="products">
+            <!-- Product Image Holder -->
+            <div class="product-image-holder2">
+              <a href="#"><img src="img/product4.jpg" alt="Product 4" class="img-responsive"></a>
+              <!-- Hover List -->
+              <ul class="hover-list2 list-reset">
+                <li><a href="#"><img src="img/shop-icon.png" alt="Shop Icon"></a></li>
+                <li><a href="#"><img src="img/view-icon.png" alt="View Icon"></a></li>
+                <li><a href="#"><img src="img/like-icon.png" alt="Like Icon"></a></li>
+              </ul>
+              <!-- Hover List End -->
+            </div>
+            <!-- Product Title -->
+            <div class="product-title3 clearfix">
+              <h3>Ženska bluza<span>Cosmos</span></h3>
+              <span>5.500 rsd</span>
+            </div>
+            <!-- Product Title End -->
+          </article>  
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-3">
+          <article class="products">
+            <!-- Product Image Holder -->
+            <div class="product-image-holder2">
+              <a href="#"><img src="img/product10.jpg" alt="Product 10" class="img-responsive"></a>
+              <!-- Hover List -->
+              <ul class="hover-list2 list-reset">
+                <li><a href="#"><img src="img/shop-icon.png" alt="Shop Icon"></a></li>
+                <li><a href="#"><img src="img/view-icon.png" alt="View Icon"></a></li>
+                <li><a href="#"><img src="img/like-icon.png" alt="Like Icon"></a></li>
+              </ul>
+              <!-- Hover List End -->
+            </div>
+            <!-- Product Title -->
+            <div class="product-title3 clearfix">
+              <h3>Ženska bluza<span>Cosmos</span></h3>
+              <span>5.500 rsd</span>
+            </div>
+            <!-- Product Title End -->
+          </article>  
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-3">
+          <article class="products">
+            <!-- Product Image Holder -->
+            <div class="product-image-holder2">
+              <a href="#"><img src="img/product11.jpg" alt="Product 11" class="img-responsive"></a>
+              <!-- Hover List -->
+              <ul class="hover-list2 list-reset">
+                <li><a href="#"><img src="img/shop-icon.png" alt="Shop Icon"></a></li>
+                <li><a href="#"><img src="img/view-icon.png" alt="View Icon"></a></li>
+                <li><a href="#"><img src="img/like-icon.png" alt="Like Icon"></a></li>
+              </ul>
+              <!-- Hover List End -->
+            </div>
+            <!-- Product Title -->
+            <div class="product-title3 clearfix">
+              <h3>Ženska bluza<span>Cosmos</span></h3>
+              <span>5.500 rsd</span>
+            </div>
+            <!-- Product Title End -->
+          </article>  
+        </div>
+        <div class="hidden-sm hidden-md col-lg-3">
+          <article class="products">
+            <!-- Product Image Holder -->
+            <div class="product-image-holder2">
+              <a href="#"><img src="img/product7.jpg" alt="Product 7" class="img-responsive"></a>
+              <!-- Hover List -->
+              <ul class="hover-list2 list-reset">
+                <li><a href="#"><img src="img/shop-icon.png" alt="Shop Icon"></a></li>
+                <li><a href="#"><img src="img/view-icon.png" alt="View Icon"></a></li>
+                <li><a href="#"><img src="img/like-icon.png" alt="Like Icon"></a></li>
+              </ul>
+              <!-- Hover List End -->
+            </div>
+            <!-- Product Title -->
+            <div class="product-title3 clearfix">
+              <h3>Ženska bluza<span>Cosmos</span></h3>
+              <span>5.500 rsd</span>
+            </div>
+            <!-- Product Title End -->
+          </article>  
+        </div>
+      </div>  
+        <!-- More Products End -->    
+    </main>
+    <!-- Main End -->
+    <!-- Main Footer -->
+    <footer class="main-footer">
+      <!-- Footer Top -->
+      <div class="footer-top">
+        <div class="conatiner">
+          <div class="row">
+            <!-- Info -->
+            <div class="col-sm-3">
+              <h3>SHOP</h3>
+              <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>
+                <a href="mailto:info@krojacevaskola.com">info@krojacevaskola.com</a><br>
+                <a href="tel:+3811155555555">+381 11 555 55 555</a><br>
+                Nikolaja Ostrovskog 3, Zemun, Srbija
+              </p>
+            </div>
+            <!-- Info End -->
+            <!-- Users -->
+            <div class="col-sm-3 col-md-offset-1 hidden-xs">
+              <h4>Korisnici</h4>
+              <ul class="list-reset">
+                <li><a href="#">Moj nalog</a></li>
+                <li><a href="#">Kako kupiti</a></li>
+                <li><a href="#">Vodič</a></li>
+              </ul>
+            </div>
+            <!-- Users End -->
+            <!-- Tags -->
+            <div class="col-sm-6 col-md-5 hidden-xs">
+              <h4>Tagovi</h4>
+              <ul class="list-reset tags clearfix">
+                <li><a href="#">Jakne</a></li>
+                <li><a href="#">Sporstka oprema</a></li>
+                <li><a href="#">Jakne</a></li>
+                <li><a href="#">Zimska kolekcija</a></li>
+                <li><a href="#">Haljine</a></li>
+                <li><a href="#">Sporstka oprema</a></li>
+                <li><a href="#">Jakne</a></li>
+                <li><a href="#">Sporstka oprema</a></li>
+              </ul>
+            </div>
+            <!-- Tags End -->
+          </div>
+        </div>
+        <span class="back-to-top">Back to top</span>
+      </div>
+      <!-- Footer Top End -->
+      <!-- Foter Bottom -->
+      <div class="footer-bottom">
+        <div class="container clearfix">
+          <!-- Soc Net -->
+          <ul class="soc-net list-reset">
+            <li><a href="#" target="_blank" class="ks">Krojačeva škola</a></li>
+            <li><a href="#" target="_blank" class="fb">Facebook</a></li>
+            <li><a href="#" target="_blank" class="tw">Twiter</a></li>
+            <li><a href="#" target="_blank" class="in">Instagram</a></li>
+            <li><a href="#" target="_blank" class="yt">Youtube</a></li>
+          </ul>
+          <!-- Soc Net End -->
+          <!-- Footer Nav -->
+          <ul class="hidden-xs footer-nav nav">
+            <li class="active"><a href="#">O nama</a></li>
+            <li><a href="#">Uslovi korišćenja</a></li>
+            <li><a href="#">Novosti</a></li>
+            <li><a href="#">Kontakt</a></li>
+          </ul>
+          <!-- Footer Nav End -->
+        </div>
+      </div>
+      <!-- Footer Bottom End -->
+    </footer>
+    <!-- Main Footer End -->
+
+    <!-- jQuery -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <!-- <script src="../js/bootstrap.min.js"></script> -->
+    <!-- <script src="../js/main.js"></script> -->
+  </body>
+</html> -->
+ 

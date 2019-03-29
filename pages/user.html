@@ -1,0 +1,30 @@
+<!-- {{name}} -->
+
+<h3>Porudžbina</h3>
+
+<div class="container">
+    <div class="row">
+        <div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Proizvod</th>
+                        <th>Model</th>
+                        <th>Količina</th>
+                        <th>Cena</th>
+                        <th class="suma">Iznos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="article in articles">
+                        <td>{{article.product_title}}</td>
+                        <td>{{article.model}}</td>
+                        <td>{{article.quantity}}</td>
+                        <td>{{article.price}}</td>
+                        <td>{{article.equal}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
